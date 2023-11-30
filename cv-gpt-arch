@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2023-11-30T06:30:26.792Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36" etag="XY2FoH-i7GMYqN1AbG2s" version="22.1.4" type="github" pages="2">
+<mxfile host="app.diagrams.net" modified="2023-11-30T06:31:57.879Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36" etag="421L50j4kxeqlWE2U9ui" version="22.1.4" type="github" pages="2">
   <diagram name="Page-1" id="2YBvvXClWsGukQMizWep">
     <mxGraphModel dx="1746" dy="494" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
@@ -154,6 +154,9 @@
         <mxCell id="Ja_vZOZm7kt9YmvjmQkD-13" value="&lt;font style=&quot;font-size: 8px;&quot;&gt;BioLoader(Loader)&lt;br&gt;1. read_bio&lt;br&gt;2. store_bio&lt;br&gt;Comments :&amp;nbsp;&lt;br&gt;Simple bio with a brief introduction and a list of strengths and weaknesses&lt;br&gt;&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="-190" y="305" width="130" height="110" as="geometry" />
         </mxCell>
+        <mxCell id="Ja_vZOZm7kt9YmvjmQkD-18" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="Ja_vZOZm7kt9YmvjmQkD-15" target="Ja_vZOZm7kt9YmvjmQkD-17">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
         <mxCell id="Ja_vZOZm7kt9YmvjmQkD-15" value="&lt;font style=&quot;font-size: 8px;&quot;&gt;BioStore(ChromaDb)&lt;br&gt;1.add_document&lt;br&gt;2. get_document&lt;br&gt;Comments :&lt;br&gt;Make it a persistent store on local disk&lt;br&gt;&lt;/font&gt;" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;" vertex="1" parent="1">
           <mxGeometry x="50" y="570" width="120" height="120" as="geometry" />
         </mxCell>
@@ -163,6 +166,18 @@
               <mxPoint x="-120" y="640" />
             </Array>
           </mxGeometry>
+        </mxCell>
+        <mxCell id="Ja_vZOZm7kt9YmvjmQkD-17" value="&lt;font style=&quot;font-size: 8px;&quot;&gt;BioRetriever(Retriever)&lt;br&gt;1. retrieve_topn&lt;br&gt;Comments :&amp;nbsp;&lt;br&gt;Get the relevant information from bio for generating the coverletter&lt;br&gt;&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="40" y="710" width="130" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="Ja_vZOZm7kt9YmvjmQkD-19" value="&lt;font style=&quot;font-size: 8px;&quot;&gt;ResumeRetriever(Retriever)&lt;br&gt;1. retrieve_topn&lt;br&gt;Comments :&amp;nbsp;&lt;br&gt;Get the relevant documents from the resume based on the user query. Additional modes of retrieval can be added to improve results&lt;br&gt;&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="490" y="710" width="130" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="Ja_vZOZm7kt9YmvjmQkD-20" value="&lt;font style=&quot;font-size: 8px;&quot;&gt;ResumeRetriever(Retriever)&lt;br&gt;1. retrieve_topn&lt;br&gt;Comments :&amp;nbsp;&lt;br&gt;Get the relevant documents from the resume based on the user query. Additional modes of retrieval can be added to improve results&lt;br&gt;&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="650" y="710" width="130" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="Ja_vZOZm7kt9YmvjmQkD-21" value="&lt;font style=&quot;font-size: 8px;&quot;&gt;ResumeRetriever(Retriever)&lt;br&gt;1. retrieve_topn&lt;br&gt;Comments :&amp;nbsp;&lt;br&gt;Get the relevant documents from the resume based on the user query. Additional modes of retrieval can be added to improve results&lt;br&gt;&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="805" y="710" width="130" height="140" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
