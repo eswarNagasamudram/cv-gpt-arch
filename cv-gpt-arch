@@ -1,12 +1,17 @@
-<mxfile host="app.diagrams.net" modified="2023-11-29T17:58:01.118Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36" etag="ktd1ukF8TkKADRqzzWDY" version="22.1.4" type="github">
+<mxfile host="app.diagrams.net" modified="2023-11-30T06:30:26.792Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36" etag="XY2FoH-i7GMYqN1AbG2s" version="22.1.4" type="github" pages="2">
   <diagram name="Page-1" id="2YBvvXClWsGukQMizWep">
-    <mxGraphModel dx="1024" dy="564" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="1746" dy="494" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
         <mxCell id="oLG5EiqGKGs32ek6ztGh-6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.25;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="oLG5EiqGKGs32ek6ztGh-2">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="50" y="210" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Ja_vZOZm7kt9YmvjmQkD-10" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="oLG5EiqGKGs32ek6ztGh-2">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="-9.999999999999773" y="80" as="targetPoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="oLG5EiqGKGs32ek6ztGh-2" value="" style="shape=actor;whiteSpace=wrap;html=1;" vertex="1" parent="1">
@@ -16,6 +21,11 @@
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="80" y="80" as="sourcePoint" />
             <mxPoint x="150" y="87" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="oLG5EiqGKGs32ek6ztGh-27" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="oLG5EiqGKGs32ek6ztGh-4" target="oLG5EiqGKGs32ek6ztGh-28">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="410" y="80.28571428571433" as="targetPoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="oLG5EiqGKGs32ek6ztGh-4" value="Input linkedIn URL" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
@@ -38,6 +48,9 @@
         <mxCell id="oLG5EiqGKGs32ek6ztGh-15" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="oLG5EiqGKGs32ek6ztGh-11" target="oLG5EiqGKGs32ek6ztGh-14">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
+        <mxCell id="oLG5EiqGKGs32ek6ztGh-20" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=0.75;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="oLG5EiqGKGs32ek6ztGh-11" target="oLG5EiqGKGs32ek6ztGh-19">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
         <mxCell id="oLG5EiqGKGs32ek6ztGh-11" value="&lt;br&gt;&lt;font style=&quot;font-size: 8px;&quot;&gt;ResumeLoader(Loader)&lt;/font&gt;&lt;br&gt;&lt;font style=&quot;font-size: 8px;&quot;&gt;&amp;nbsp;1. read_resume(doc_path) -&amp;gt; pages[] :&lt;br&gt;Comments :&lt;br&gt;Have variables for chunk_length, number of splits&amp;nbsp;&lt;br&gt;Better split of docs&amp;nbsp;&lt;br&gt;&lt;/font&gt;" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;" vertex="1" parent="1">
           <mxGeometry x="150" y="200" width="140" height="130" as="geometry" />
         </mxCell>
@@ -45,19 +58,120 @@
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="oLG5EiqGKGs32ek6ztGh-14" value="&lt;font style=&quot;font-size: 8px;&quot;&gt;ResumeStore(ChromaDb)&lt;br&gt;1.add_document&lt;br&gt;2. get_document&lt;br&gt;Comments :&lt;br&gt;Make it a persistent store on local disk&lt;br&gt;&lt;/font&gt;" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;" vertex="1" parent="1">
-          <mxGeometry x="160" y="370" width="120" height="120" as="geometry" />
+          <mxGeometry x="220" y="570" width="120" height="120" as="geometry" />
         </mxCell>
-        <mxCell id="oLG5EiqGKGs32ek6ztGh-18" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="oLG5EiqGKGs32ek6ztGh-16">
-          <mxGeometry relative="1" as="geometry">
-            <mxPoint x="540" y="430" as="targetPoint" />
+        <mxCell id="oLG5EiqGKGs32ek6ztGh-16" value="&lt;font style=&quot;font-size: 8px;&quot;&gt;ResumeRetriever(Retriever)&lt;br&gt;1. retrieve_topn&lt;br&gt;Comments :&amp;nbsp;&lt;br&gt;Get the relevant documents from the resume based on the user query. Additional modes of retrieval can be added to improve results&lt;br&gt;&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="215" y="710" width="130" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="oLG5EiqGKGs32ek6ztGh-19" value="&lt;font style=&quot;font-size: 8px;&quot;&gt;ResumeParser(PydanticParser)&lt;br&gt;1. convert_to_text&lt;br&gt;2. parse_resume&lt;br&gt;3. create_docs&lt;br&gt;Comments :&lt;br&gt;Uses LLM and a pydantic parser to parse the resume content into the object format&lt;br&gt;&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="10" y="300" width="130" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="oLG5EiqGKGs32ek6ztGh-21" value="&lt;font style=&quot;font-size: 8px;&quot;&gt;ResumeStructure(Baseclass)&lt;br&gt;1. validations&lt;br&gt;Comments:&lt;br&gt;Structure of a resume including the contact details, experiences, education, skills&lt;br&gt;&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="10" y="460" width="130" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="oLG5EiqGKGs32ek6ztGh-23" value="" style="endArrow=classic;startArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;strokeColor=default;shape=link;" edge="1" parent="1" source="oLG5EiqGKGs32ek6ztGh-19" target="oLG5EiqGKGs32ek6ztGh-21">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="430" y="300" as="sourcePoint" />
+            <mxPoint x="480" y="250" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="oLG5EiqGKGs32ek6ztGh-16" value="&lt;font style=&quot;font-size: 8px;&quot;&gt;ResumeRetreiver(Retreiver)&lt;br&gt;1. answer_query&lt;br&gt;2. parse_resume&lt;br&gt;&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="360" y="400" width="130" height="60" as="geometry" />
+        <mxCell id="oLG5EiqGKGs32ek6ztGh-24" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="oLG5EiqGKGs32ek6ztGh-19" target="oLG5EiqGKGs32ek6ztGh-14">
+          <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="oLG5EiqGKGs32ek6ztGh-19" value="&lt;font style=&quot;font-size: 8px;&quot;&gt;ResumeParser(PydanticParser)&lt;br&gt;1. answer_qu&lt;br&gt;2. parse_resume&lt;br&gt;&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="540" y="400" width="130" height="60" as="geometry" />
+        <mxCell id="oLG5EiqGKGs32ek6ztGh-25" value="&lt;font style=&quot;font-size: 8px;&quot;&gt;Option1 : No extra parsing&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="220" y="340" width="60" height="30" as="geometry" />
         </mxCell>
+        <mxCell id="oLG5EiqGKGs32ek6ztGh-26" value="&lt;font style=&quot;font-size: 8px;&quot;&gt;Option2 : Pass documents based on parsed data&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="140" y="390" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="oLG5EiqGKGs32ek6ztGh-31" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="oLG5EiqGKGs32ek6ztGh-28" target="oLG5EiqGKGs32ek6ztGh-32">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="530" y="90" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="oLG5EiqGKGs32ek6ztGh-28" value="&lt;font style=&quot;font-size: 8px;&quot;&gt;HTMLLoader(Loader)&lt;br&gt;1. load_html&lt;br&gt;Comments :&amp;nbsp;&lt;br&gt;Use simple HTML2Text initially. Explore using BeautifulSoup in later stages&lt;br&gt;&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="340" y="20" width="130" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="oLG5EiqGKGs32ek6ztGh-30" value="&lt;font style=&quot;font-size: 8px;&quot;&gt;JDStructure(Baseclass)&lt;br&gt;1. validations&lt;br&gt;Comments :&amp;nbsp;&lt;br&gt;Pydantic class with structured information like company name, job description, hiring team, hiring manager&lt;br&gt;&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="340" y="200" width="130" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="oLG5EiqGKGs32ek6ztGh-36" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="oLG5EiqGKGs32ek6ztGh-32" target="Ja_vZOZm7kt9YmvjmQkD-1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="730" y="90" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Ja_vZOZm7kt9YmvjmQkD-6" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" target="Ja_vZOZm7kt9YmvjmQkD-5">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="619.9999999999998" y="90" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="oLG5EiqGKGs32ek6ztGh-32" value="&lt;font style=&quot;font-size: 8px;&quot;&gt;JDParser(PydanticParser)&lt;br&gt;1. parse_jd&lt;br&gt;2. store_jd&lt;br&gt;Comments :&amp;nbsp;&lt;br&gt;Parse the HTML text into a pydantic class which will contain the details of the job description.&lt;br&gt;&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="500" y="30" width="130" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="oLG5EiqGKGs32ek6ztGh-33" value="" style="endArrow=none;html=1;rounded=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;shape=link;edgeStyle=orthogonalEdgeStyle;" edge="1" parent="1" source="oLG5EiqGKGs32ek6ztGh-30" target="oLG5EiqGKGs32ek6ztGh-32">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="460" y="300" as="sourcePoint" />
+            <mxPoint x="510" y="250" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="oLG5EiqGKGs32ek6ztGh-34" value="&lt;font style=&quot;font-size: 8px;&quot;&gt;JDStore(ChromaDb)&lt;br&gt;1.add_document&lt;br&gt;2. get_document&lt;br&gt;Comments :&lt;br&gt;Make it a persistent store on local disk&lt;br&gt;&lt;/font&gt;" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;" vertex="1" parent="1">
+          <mxGeometry x="500" y="560" width="120" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="oLG5EiqGKGs32ek6ztGh-35" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="oLG5EiqGKGs32ek6ztGh-32" target="oLG5EiqGKGs32ek6ztGh-34">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="600" y="175" />
+              <mxPoint x="630" y="175" />
+              <mxPoint x="630" y="530" />
+              <mxPoint x="550" y="530" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Ja_vZOZm7kt9YmvjmQkD-1" value="&lt;font style=&quot;font-size: 8px;&quot;&gt;CompanyValues(Agent)&lt;br&gt;1. get_values&lt;br&gt;2. strore_company_values&lt;br&gt;Comments :&amp;nbsp;&lt;br&gt;Given a company name a self ask retrieval chain to get the values of the company&lt;br&gt;&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="770" y="305" width="130" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="Ja_vZOZm7kt9YmvjmQkD-2" value="&lt;font style=&quot;font-size: 8px;&quot;&gt;ValuesStore(ChromaDb)&lt;br&gt;1.add_document&lt;br&gt;2. get_document&lt;br&gt;Comments :&lt;br&gt;Make it a persistent store on local disk&lt;br&gt;&lt;/font&gt;" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;" vertex="1" parent="1">
+          <mxGeometry x="650" y="560" width="120" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="Ja_vZOZm7kt9YmvjmQkD-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="Ja_vZOZm7kt9YmvjmQkD-1" target="Ja_vZOZm7kt9YmvjmQkD-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Ja_vZOZm7kt9YmvjmQkD-5" value="&lt;font style=&quot;font-size: 8px;&quot;&gt;CompanyUpdates(Agent)&lt;br&gt;1. get_updates&lt;br&gt;2. store_updates&lt;br&gt;Comments :&amp;nbsp;&lt;br&gt;Parse the HTML text into a pydantic class which will contain the details of the job description.&lt;br&gt;&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="750" y="10" width="130" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="Ja_vZOZm7kt9YmvjmQkD-7" value="&lt;font style=&quot;font-size: 8px;&quot;&gt;UpdatesStore(ChromaDb)&lt;br&gt;1.add_document&lt;br&gt;2. get_document&lt;br&gt;Comments :&lt;br&gt;Make it a persistent store on local disk&lt;br&gt;&lt;/font&gt;" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;" vertex="1" parent="1">
+          <mxGeometry x="810" y="560" width="120" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="Ja_vZOZm7kt9YmvjmQkD-8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="Ja_vZOZm7kt9YmvjmQkD-5" target="Ja_vZOZm7kt9YmvjmQkD-7">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Ja_vZOZm7kt9YmvjmQkD-14" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="Ja_vZOZm7kt9YmvjmQkD-11" target="Ja_vZOZm7kt9YmvjmQkD-13">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Ja_vZOZm7kt9YmvjmQkD-11" value="" style="sketch=0;outlineConnect=0;fontColor=#232F3E;gradientColor=none;fillColor=#232F3D;strokeColor=none;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;fontSize=12;fontStyle=0;aspect=fixed;pointerEvents=1;shape=mxgraph.aws4.document;" vertex="1" parent="1">
+          <mxGeometry x="-50" y="54.68000000000001" width="37" height="50.63" as="geometry" />
+        </mxCell>
+        <mxCell id="Ja_vZOZm7kt9YmvjmQkD-13" value="&lt;font style=&quot;font-size: 8px;&quot;&gt;BioLoader(Loader)&lt;br&gt;1. read_bio&lt;br&gt;2. store_bio&lt;br&gt;Comments :&amp;nbsp;&lt;br&gt;Simple bio with a brief introduction and a list of strengths and weaknesses&lt;br&gt;&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-190" y="305" width="130" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="Ja_vZOZm7kt9YmvjmQkD-15" value="&lt;font style=&quot;font-size: 8px;&quot;&gt;BioStore(ChromaDb)&lt;br&gt;1.add_document&lt;br&gt;2. get_document&lt;br&gt;Comments :&lt;br&gt;Make it a persistent store on local disk&lt;br&gt;&lt;/font&gt;" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;" vertex="1" parent="1">
+          <mxGeometry x="50" y="570" width="120" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="Ja_vZOZm7kt9YmvjmQkD-16" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="Ja_vZOZm7kt9YmvjmQkD-13" target="Ja_vZOZm7kt9YmvjmQkD-15">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="-120" y="640" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="8QQ7EHfnpwyQ-X9lWzRI" name="Page-2">
+    <mxGraphModel dx="1434" dy="790" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
       </root>
     </mxGraphModel>
   </diagram>
